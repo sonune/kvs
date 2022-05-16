@@ -1,0 +1,173 @@
+/* for aligning explain subitems */
+
+#explain{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.subitem{
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+
+
+
+.notifications{
+    /* align-self:flex-start; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    animation: blinker 1s linear infinite;
+    font-weight: bold;
+}
+#updates{
+    /* align-self:flex-start; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    animation: blinker 1s linear infinite;
+    font-weight: bold;
+}
+.notification{
+    /* align-self:flex-start; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    /* animation: blinker 1s linear infinite; */
+    font-weight: bold;
+}
+@keyframes blinker {
+    25% {
+      opacity: 0.2;
+
+    }
+    50%{
+        opacity: 0.3;
+
+    }
+    75%{
+        opacity: 0.7;
+
+    }
+    100%{
+        opacity: 1;
+
+    }
+}
+#text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#attendence{
+    display: flex;
+    align-items: flex-start;
+    justify-content: right;
+}
+
+/* extra styles of explain items */
+#explain .notifications a{
+    font-family: 'Kaushan Script', cursive;
+    /* color: hotpink; */
+    text-decoration: none;
+    font-size: 1.7em;
+
+}
+#explain .notification a{
+    font-family: 'Kaushan Script', cursive;
+    /* color: hotpink; */
+    text-decoration: none;
+    font-size: 1.7em;
+
+}
+#explain #updates a{
+    font-family: 'Kaushan Script', cursive;
+    /* color: hotpink; */
+    text-decoration: none;
+    font-size: 1.7em;
+
+}
+
+#explain #attendence label {
+    font-family: 'Love Light', cursive;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+#attendencetext{
+    display: none;
+}
+#attendencebtn{
+    border: 1px solid white;
+    font-size: large;
+    padding: 0.2em;
+    font-family: 'Cookie', cursive;
+    height: 1.9em;
+    width: 6em;
+    border-radius: 0.4em;
+    background-color: pink;
+    color: white;
+
+}
+#attendencebtn:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* For Welcoming Her.......... */
+#weds{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#Welcome{
+    width: 30%;
+    height: 20%;
+    background-color: aqua;
+    color: black;
+    font-size: 1.3em;
+    text-align: center;
+    font-family: 'Love Light', cursive;
+    border-radius: 0.9em;
+}
+
+    /* -----------------------for update and how to use buttons....------------------- */
+
+#notifications{
+    width: 30%;
+    height: 20%;
+    background-color: aqua;
+    color: black;
+    font-size: 1.5em;
+    padding-bottom: 0.7em;
+    padding-top: 0.5em;
+    text-align: center;
+    font-family: 'Love Light', cursive;
+    border-radius: 0.9em;
+
+}
+
+#HowToUse{
+    margin-top: 2em;
+
+}
+#explain #HowToUse a{
+    font-family: 'Love Light', cursive;
+}
+
+#updates{
+    margin-top: 2em;
+}
+
+
+
+#explain #updates a{
+
+    font-family: 'Love Light', cursive;
+}
